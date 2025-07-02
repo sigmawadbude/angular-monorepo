@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Products } from '@angular-monorepo/products';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  imports: [Products],
+  imports: [RouterModule],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
-  protected title = 'inventory';
+  protected pageTitle = 'Acme Product Management';
 }

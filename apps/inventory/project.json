@@ -20,7 +20,10 @@
             "input": "apps/inventory/public"
           }
         ],
-        "styles": ["apps/inventory/src/styles.css"]
+        "styles": [
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "apps/inventory/src/styles.css"
+        ]
       },
       "configurations": {
         "production": {
