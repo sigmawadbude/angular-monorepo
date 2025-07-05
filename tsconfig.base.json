@@ -18,6 +18,7 @@
       "@angular-monorepo/orders": ["libs/orders/src/index.ts"],
       "@angular-monorepo/products": ["libs/products/src/index.ts"],
       "@angular-monorepo/services": ["libs/shared/services/src/index.ts"],
+      "@angular-monorepo/tasks-list": ["libs/tasks-list/src/index.ts"],
       "@angular-monorepo/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
