@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LogService } from '@angular-monorepo/services';
 
 @Component({
   selector: 'lib-products',
@@ -7,4 +8,10 @@ import { CommonModule } from '@angular/common';
   templateUrl: './products.html',
   styleUrl: './products.css',
 })
-export class Products {}
+export class Products {
+  logServ = inject(LogService);
+
+  constructor() {
+    this.logServ.consoleLog('Products component initialized');
+  }
+}

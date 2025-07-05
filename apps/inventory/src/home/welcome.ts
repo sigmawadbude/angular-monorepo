@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LogService } from '@angular-monorepo/services';
 
 @Component({
   selector: 'app-welcome',
@@ -21,4 +22,10 @@ import { CommonModule } from '@angular/common';
 })
 export class Welcome {
   protected pageTitle = 'Welcome';
+
+  logServ = inject(LogService);
+
+  constructor() {
+    this.logServ.consoleLog(`${this.pageTitle} component initialized`);
+  }
 }
